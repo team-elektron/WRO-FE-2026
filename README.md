@@ -44,12 +44,35 @@ This is the public repo for our team and the work we have done on our robot.
 ## How does it work?
 
 ### Driving system
-- The main driving motors are 2 N30 motors in a 1:150 configuration, then the power is transferred to the wheels with a 3:1 gear ratio, the motors feature hall effect sensors. We have tested a couple different configurations (mainly 1:3 and 1:1) out of which, 3:1 turned out to work the best for our needs as these motors spin quite fast but are quite low torque. For extra torque, we decided to include 2 motors instead of one. They are connected to the DRV8833 H-Bridge IC on separate channels **BUT** the motors are connected onto one shared shaft together. The separte channels are exclusively to distribute load evenly on the IC.
-- We are using a 110mm long and 3mm in diameter steel shaft and plastic gears.
-- Wheels are 3D printed, each wheel being 30mm in diameter without the outer rubber.
-- These specific motors have 2 hall effect sensors each, one for speed and one for direction, however we are only using one set from one motor, the other one stays disconnected and should only be used in case that something goes wrong with the other motor.
-- Speed control is done via a PID algorithm handled by the Pi Pico 2.
-- The motors are controlled by a DRV8833 IC which is current-limited to 1A per channel.
+The main driving motors are 2 N30 motors in a 1:150 configuration, then the power is transferred to the wheels with a 3:1 gear ratio, the motors feature hall effect sensors. 
+
+<p float="left">
+  <img src="Robot Photos/Pics/driving-base.jpg" width="400"/>
+  &nbsp;
+  <img src="Robot Photos/Pics/driving-base-3dprint.jpg" width="400"/>
+</p>
+
+We have tested a couple different configurations (mainly 1:3 and 1:1) out of which, 3:1 turned out to work the best for our needs as these motors spin quite fast but are quite low torque. For extra torque, we decided to include 2 motors instead of one. They are connected to the DRV8833 H-Bridge IC on separate channels **BUT** the motors are connected onto one shared shaft together. The separte channels are exclusively to distribute load evenly on the IC.
+
+We are using a 110mm long and 3mm in diameter steel shaft and plastic gears.
+
+Wheels are 3D printed, each wheel being 30mm in diameter without the outer rubber.
+
+<p float="left">
+  <img src="Robot Photos/Pics/wheel.png" width="350"/>
+  &nbsp;
+</p>
+
+These specific motors have 2 hall effect sensors each, one for speed and one for direction, however we are only using one set from one motor, the other one stays disconnected and should only be used in case that something goes wrong with the other motor.
+
+Speed control is done via a PID algorithm handled by the Pi Pico 2.
+
+The motors are controlled by a DRV8833 IC which is current-limited to 1A per channel.
+
+<p float="left">
+  <img src="Robot Photos/Pics/drv8833.jpg" width="350"/>
+  &nbsp;
+</p>
 
 ### Steering system
 - The steering system is controlled by one main MG90S servo from Waveshare.
@@ -60,12 +83,17 @@ This is the public repo for our team and the work we have done on our robot.
 ### Power and power delivery
 We had originally thought about using a 3S battery system like we did last year, however, we switched to a 2S system now to save on space and weight. With some clever engineering tricks and overcomplication the power delivery side, that was super easy to do.
 
+<p float="left">
+  <img src="Robot Photos/Pics/initial-assembly.jpeg" width="350"/>
+  &nbsp;
+</p>
+
 The main power source are 2 5360105 Li-Po 3.7v 5Ah cells connected in series, they each have their own integrated BMS for safety.
 We have decided to continue to charge our cells with a USB-C charger, but this year we have switched to a much more efficient IP2326 module for charging (and also because our previous battery had a dedicated BMS as it was built from bare 18650 cells and had balancing included which the 2 separate battery cells don't).
 
 The actual power delivery part is split up into a couple different stages, one buck regulator for the Pi 5 exclusively and 2 smaller LDO regulators for the Pi Pico 2, sensors and another for the MG90S servo.
 
-The main power regulator IC is a TPS54623RHLR. It's a pretty recent chip with not so much documentation available from other hobbyists but due to its eyewatering price and great performance claims, we had to give it a shot. After designing a circuit that works for our needs in Ti's WEBENCH design utility (which are basically 5V output and at least 5A output max), we had ourselves a very nice and reliable regulator config. 
+The main power regulator IC is a TPS54623RHLR. It's a pretty recent chip with not so much documentation available from other hobbyists but due to its very attractive price and great performance claims, we had to give it a shot. After designing a circuit that works for our needs in Ti's WEBENCH design utility (which are basically 5V output and at least 5A output max), we had ourselves a very nice and reliable regulator config. 
 
 Robots are noisy machines, both literally in an audible sense, and power wise. Last year we had major issues with premade modules for power regulations which just couldn't handle our Pi, so this year, we decided to go overkill on ensuring our robot has clean power everywhere at all times. Our decoupling circuit includes:
   -  One 220uF 10V 10TPE220ML Panasonic Polymer Tantalum capacitor for bulk power storage.
@@ -75,6 +103,7 @@ Robots are noisy machines, both literally in an audible sense, and power wise. L
 <p float="left">
   <img src="Robot Photos/Pics/5v-reg-1.png" width="400"/>
   &nbsp;
+  <img src="Robot Photos/Pics/vreg.jpg" width="400"/>
 </p>
 
 For the other two power regulators, we decided to go with the following combination:
