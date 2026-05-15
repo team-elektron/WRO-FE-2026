@@ -174,5 +174,22 @@ We use a simple UART protocol to communicate between the SBC and MCU:
 The robot is controlled through the 2.4in TFT Touchscren LCD display. It also shows all of the telemetry data collected from the Pi Pico 2 Zero and allows for manual control when debugging. The competition-ready interface will just feature a simple option to select between running the obstacle or open challenge code and one start button. 
 
 
+### Sensors
+After running into a lot of trouble with ultrasonic distance sensors (hc-sr04) last year, we now use Time-of-Flight distance sensors. The most readily available sensor of this kind on the market is the VL53Lx series of sensors.
+
+We use 3 ToF sensors on the robot with the option of adding a 4th sensor (rear side sensor) if needed. The data is polled in single shot mode on each sensor for higher speed and precision.
+
+<p float="left">
+  <img src="Robot Photos/Pics/vl53l0x.jpg" width="350"/>
+  &nbsp;
+</p>
+
+For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accurate sensor and has a little bit of drift when idle but that's nothing resetting the sensor yaw angle before every turn cant fix. 
+
+<p float="left">
+  <img src="Robot Photos/Pics/mpu6050.png" width="350"/>
+  &nbsp;
+</p>
+
 
 
