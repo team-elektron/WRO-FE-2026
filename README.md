@@ -161,9 +161,3 @@ We use a simple UART protocol to communicate between the SBC and MCU:
 
 
 
-- SBC: Raspberry Pi 5 8GB
-- MCU: Raspberry Pi Pico 2 RP2350 Zero (Waveshare)
-- 3x VL53L0X (Purple PCB) Time-of-Flight Distance Sensor
-- MPU6050 IMU Sensor
-- WS2812 Addressable LEDs 8x
-- LCD: TFT Touch 2.4in LCD
