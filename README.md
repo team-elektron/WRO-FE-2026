@@ -9,4 +9,12 @@
 * `3D Models` is for the files for models used by 3D printers to produce the vehicle elements.
 * `Misc` is for other files which can be used to understand how to prepare the vehicle for the competition.
 
-* 
+## Introduction
+
+This is the public repo for our team and the work we have done on our robot.
+
+<p float="left">
+  <img src="Robot%20Photos/right.jpg" width="350"/>
+  &nbsp;
+  <img src="Robot%20Photos/Pics/servo-and-tof.jpg" width="350"/>
+</p>
