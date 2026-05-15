@@ -39,8 +39,6 @@ This is the public repo for our team and the work we have done on our robot.
 
 
 
-## Component list & why we chose them
-
 ## How does it work?
 
 ### Driving system
@@ -72,13 +70,22 @@ The motors are controlled by a DRV8833 IC which is current-limited to 1A per cha
 <p float="left">
   <img src="Robot Photos/Pics/drv8833.jpg" width="350"/>
   &nbsp;
+  <img src="Robot Photos/Pics/driving-mech-assembled.jpg" width="500"/>
 </p>
 
 ### Steering system
-- The steering system is controlled by one main MG90S servo from Waveshare.
-- Last year, we had issues with our steering system on the Open Championship in Ljubljana which was caused by a fake "metal" servo. Hence why we opted for higher quality full metal gear servos, and the MG90S was a great option as we didn't really need more power than that.
-- Steering power is transferred to the wheels with a steering shaft and poles on which we tied some rubber bands to help center the steering mechanism.
-- With this configuration, we are able to achieve a steering angle of 50 degrees which fits our needs nicely.
+The steering system is controlled by one main MG90S servo from Waveshare.
+
+Last year, we had issues with our steering system on the Open Championship in Ljubljana which was caused by a fake "metal" servo. Hence why we opted for higher quality full metal gear servos, and the MG90S was a great option as we didn't really need more power than that.
+
+Steering power is transferred to the wheels with a steering shaft and poles on which we tied some rubber bands to help center the steering mechanism.
+With this configuration, we are able to achieve a steering angle of 50 degrees which fits our needs nicely.
+
+<p float="left">
+  <img src="Robot Photos/Pics/steering-base.jpg" width="400"/>
+  &nbsp;
+  <img src="Robot Photos/Pics/servo-and-tof.jpg" width="400"/>
+</p>
 
 ### Power and power delivery
 We had originally thought about using a 3S battery system like we did last year, however, we switched to a 2S system now to save on space and weight. With some clever engineering tricks and overcomplication the power delivery side, that was super easy to do.
