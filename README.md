@@ -132,6 +132,33 @@ Workloads are distributed between both the SBC and the MCU like this:
   &nbsp;
 </p>
 
+Pi 5 Handles camera input and OpenCV image processing and then sends movement data to the Pi Pico 2 Zero. 
+
+We use a simple UART protocol to communicate between the SBC and MCU:
+- Every packet
+  
+  `[0xAA] [TYPE] [LEN] [PAYLOAD...] [CRC8]`
+  - `0xAA` Start byte, always
+  - `TYPE` What kind of message
+  - `LEN` Payload length in bytes
+  - `CRC8` Checksum of everything except start byte
+
+- Pi 5 -> Pico 2 Zero (commands): `TYPE = 0x01`
+  
+  `[0xAA] [0x01] [04] [dir] [speed] [servo] [led_mode] [CRC8]`
+  - `dir` 0 = stop, 1 = fwd, 2 = bwd
+  - `speed` 0 - 255
+  - `servo` 0 - 180
+  - `led_mode` 0 = idle, 1 = driving, 2 = obstacle, 3 = low battery
+
+- Pico 2 Zero -> Pi 5 (telemetry): `TYPE = 0x02`
+  
+  `[0xAA] [0x02] [14] [tof0_H] [tof0_L] [tof1_H] [tof1_L] [tof2_H] [tof2_L] [tof3_H] [tof3_L] [batt_H] [batt_L] [yaw_H] [yaw_L] [enc_H] [enc_L] [CRC8]`
+  - ToF values in mm, split into hi/lo bytes
+  - Battery in mV
+  - Yaw in tenths of a degree (so 1234 = 123.4 degrees)
+  - Encoder ticks as int16
+
 
 
 - SBC: Raspberry Pi 5 8GB
