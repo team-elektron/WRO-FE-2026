@@ -37,6 +37,18 @@ This is the public repo for our team and the work we have done on our robot.
 - Addressable LED indicators
 - 2.4in TFT Touch Control LCD
 
+### Size
+- 205x135x65mm (LxWxH) without camera mount, 205x135x~150mm (LxWxH) with camera mount
+- ~490g total weight
+
+<p float="left">
+  <img src="Robot Photos/Pics/length.png" width="150"/>
+  &nbsp;
+  <img src="Robot Photos/Pics/width.jpg" width="300"/>
+  &nbsp;
+  <img src="Robot Photos/Pics/weight.jpg" width="280"/>
+</p>
+
 
 
 ## How does it work?
@@ -158,6 +170,9 @@ We use a simple UART protocol to communicate between the SBC and MCU:
   - Battery in mV
   - Yaw in tenths of a degree (so 1234 = 123.4 degrees)
   - Encoder ticks as int16
+
+The robot is controlled through the 2.4in TFT Touchscren LCD display. It also shows all of the telemetry data collected from the Pi Pico 2 Zero and allows for manual control when debugging. The competition-ready interface will just feature a simple option to select between running the obstacle or open challenge code and one start button. 
+
 
 
 
