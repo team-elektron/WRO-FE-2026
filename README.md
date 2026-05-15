@@ -72,9 +72,19 @@ Robots are noisy machines, both literally in an audible sense, and power wise. L
   -  Two 10uF 6.3V X6S CL10X106MQ8NNNC Ceramic MLCC Samsung capacitors for mid frequency decoupling
   -  Four 100nF 6.3V X7R CGA0402X7R104K6R3GT Ceramic MLCC HRE capacitors for high frequency decoupling which were placed right next to the GPIO power pins of the Pi 5
 
+<p float="left">
+  <img src="Robot Photos/Pics/5v-reg-1.png" width="400"/>
+  &nbsp;
+</p>
+
 For the other two power regulators, we decided to go with the following combination:
   - AP2112K-3.3TRG1 3.3V 1A LDO regulator for the Pico 2 and 3.3V sensors (ToF and IMU)
   - ME6118A50PG 5V 1A LDO regulator for our MG90S servo
+
+<p float="left">
+  <img src="Robot Photos/Pics/5v-3v3-reg-1.png" width="400"/>
+  &nbsp;
+</p>
 
 ### The Brain
 Our robot runs on a Raspberry Pi 5 (8GB). We chose this SBC because we had it available and because the only other option we had was a Pi 4 with 2GB of ram. The choice is obvious :D
