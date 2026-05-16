@@ -1,6 +1,6 @@
 # Elektron Team - WRO Future Engineers 2026 - Bosnia and Herzegovina
 
-## Content
+## Folder Content
 * `Team Photos` contains 2 photos of the team (an official one and one funny photo with all team members)
 * `Robot Photos` contains 6 photos of the vehicle (from every side, from top and bottom)
 * `Videos` contains the video.md file with the link to a video where driving demonstration exists
@@ -8,6 +8,16 @@
 * `Code` contains code of control software for all components which were programmed to participate in the competition.
 * `3D Models` is for the files for models used by 3D printers to produce the vehicle elements.
 * `Misc` is for other files which can be used to understand how to prepare the vehicle for the competition.
+
+## Navigation
+Intro
+  - <a href="#introduction">Introduction</a>
+  - <a href="#robot-gallery">Robot Gallery</a>
+  - <a href="#technical--mechanical-specifications">Technical & Mechanical Specifications</a>
+    - <a href="#mechanics--drive">Mechanics & Drive</a>
+    - <a href="#electronics">Electronics</a>
+    - <a href="#size">Size</a>
+  - <a href=""></a>
 
 ## Introduction
 
