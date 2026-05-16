@@ -80,9 +80,9 @@ Speed control is done via a PID algorithm handled by the Pi Pico 2.
 The motors are controlled by a DRV8833 IC which is current-limited to 1A per channel.
 
 <p float="left">
-  <img src="Robot Photos/Pics/drv8833.jpg" width="350"/>
+  <img src="Robot Photos/Pics/drv8833.jpg" width="250"/>
   &nbsp;
-  <img src="Robot Photos/Pics/driving-mech-assembled.jpg" width="500"/>
+  <img src="Robot Photos/Pics/driving-mech-assembled.jpg" width="450"/>
 </p>
 
 ### Steering system
@@ -166,7 +166,7 @@ We use a simple UART protocol to communicate between the SBC and MCU:
 - Pico 2 Zero -> Pi 5 (telemetry): `TYPE = 0x02`
   
   `[0xAA] [0x02] [14] [tof0_H] [tof0_L] [tof1_H] [tof1_L] [tof2_H] [tof2_L] [tof3_H] [tof3_L] [batt_H] [batt_L] [yaw_H] [yaw_L] [enc_H] [enc_L] [CRC8]`
-  - ToF values in mm, split into hi/lo bytes
+  - ToF values in mm, split into HI/LO bytes
   - Battery in mV
   - Yaw in tenths of a degree (so 1234 = 123.4 degrees)
   - Encoder ticks as int16
@@ -191,5 +191,29 @@ For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accu
   &nbsp;
 </p>
 
+## The assembly process
 
+### PCB assembly
+WIP...
+
+### 3d Print & Assembly
+WIP...
+
+### Wiring it all up
+WIP...
+
+## Code Explanation
+
+### Open Challenge
+For the open challenge we use a simple script that lives on the Pi Pico 2 Zero.
+
+<p float="left">
+  <img src="Robot Photos/Pics/open-topology.png" width="350"/>
+  &nbsp;
+</p>
+
+The code works by initiating a FOR loop which runs for a preset amount of times (turns). 
+Main logic works by utilizing the side sensors as a line follower, and using the front distance sensor as a wall detector. 
+
+Basically, go forward until front distance drops below 100cm, then initiate a 90 degree turn in the direction that the robot figures out by looking at which of the 2 side sensors is out of range (the side thats out of range is the side with no wall, so turn towards that one). It repeats this whole process approximately 12 times. 4 turns per lap, 3 laps total.
 
