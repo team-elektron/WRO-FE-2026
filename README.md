@@ -60,6 +60,7 @@ This is the public repo for our team and the work we have done on our robot.
 - Full-axis IMU sensor
 - Addressable LED indicators
 - 2.4in TFT Touch Control LCD
+- Raspberry Pi Camera Module 2 160 degree FOV
 
 ### Size
 - 205x135x65mm (LxWxH) without camera mount, 205x135x~150mm (LxWxH) with camera mount
