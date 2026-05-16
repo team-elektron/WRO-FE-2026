@@ -10,14 +10,28 @@
 * `Misc` is for other files which can be used to understand how to prepare the vehicle for the competition.
 
 ## Navigation
-Intro
-  - <a href="#introduction">Introduction</a>
-  - <a href="#robot-gallery">Robot Gallery</a>
-  - <a href="#technical--mechanical-specifications">Technical & Mechanical Specifications</a>
-    - <a href="#mechanics--drive">Mechanics & Drive</a>
-    - <a href="#electronics">Electronics</a>
-    - <a href="#size">Size</a>
-  - <a href=""></a>
+
+- <a href="#introduction">Introduction</a>
+- <a href="#robot-gallery">Robot Gallery</a>
+- <a href="#technical--mechanical-specifications">Technical & Mechanical Specifications</a>
+  - <a href="#mechanics--drive">Mechanics & Drive</a>
+  - <a href="#electronics">Electronics</a>
+  - <a href="#size">Size</a>
+- <a href="#how-does-it-work">How does it work?</a>
+  - <a href="#driving-system">Driving System</a>
+  - <a href="#steering-system">Steering System</a>
+  - <a href="#power-and-power-delivery">Power & Power delivery system</a>
+  - <a href="#the-brain">The brain (SBC, MCU)</a>
+  - <a href="#sensors">Sensors</a>
+- <a href="#the-assembly-process">The assembly process</a>
+  - <a href="#pcb-assembly">PCB Assembly</a>
+  - <a href="#3d-print--assembly">3d Print & Assembly</a>
+  - <a href="#wiring-it-all-up">Wiring it all up</a>
+- <a href="#code-explanation">Code Explanation</a>
+  - <a href="#open-challenge">Open Challenge</a>
+  - <a href="#obstacle-challenge">Obstacle Challenge</a>
+<!-- - <a href=""></a>-->
+
 
 ## Introduction
 
