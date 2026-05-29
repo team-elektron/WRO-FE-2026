@@ -28,7 +28,7 @@
   - <a href="#3d-print--assembly">3d Print & Assembly</a>
   - <a href="#wiring-it-all-up">Wiring it all up</a>
 - <a href="#code-explanation">Code Explanation</a>
-  - <a href="">Raspberry Pi Pico 2 <-> Pi 5 Communications bridge</a>
+  - <a href="#raspberry-pi-pico-2---pi-5-communications-bridge">Raspberry Pi Pico 2 <-> Pi 5 Communications bridge</a>
   - <a href="#open-challenge">Open Challenge</a>
   - <a href="#obstacle-challenge">Obstacle Challenge</a>
 <!-- - <a href=""></a>-->
@@ -216,6 +216,17 @@ For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accu
   <img src="Robot Photos/Pics/mpu6050.png" width="350"/>
   &nbsp;
 </p>
+
+# Bill Of Materials
+- <a href="https://www.waveshare.com/rp2350-zero.htm">Raspberry Pi Pico 2 Zero (WaveShare)<a/>
+- <a href="https://sync.ba/product/raspberry-pi-5/">Raspberry Pi 5 8GB</a>
+- <a href="https://share.temu.com/9bHhRICRygB">Time-of-Flight VL53L0x (Temu)<a/>
+- <a href="https://share.temu.com/IlQc3Dd6nUB">IMU6050 (Temu)</a>
+- <a href="https://www.waveshare.com/mg90s-servo.htm">MG90S Metal 9g Servo (WaveShare)</a>
+- <a href="https://www.aliexpress.com/item/1005009751662765.html">N30 1:150 w Hall sensor motor (AliExpress)</a>
+- <a href="https://share.temu.com/7EXXP9jFbPB">5360105 3.7V 5000MAh Li-Po Battery (Temu)</a>
+- <a href="https://share.temu.com/1M8ztQmiIdB">IP2326 2S Charger module (Temu)</a>
+- <a href="https://github.com/team-elektron/WRO-FE-2026/blob/main/Schematics/BOM_WRO-FE-2026.csv">PCB Components BOM (LCSC)</a>
 
 ## The assembly process
 
