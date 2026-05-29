@@ -23,10 +23,10 @@
   - <a href="#power-and-power-delivery">Power & Power delivery system</a>
   - <a href="#the-brain">The brain (SBC, MCU)</a>
   - <a href="#sensors">Sensors</a>
+- <a href="#bill-of-materials">Bill of Materials</a>
 - <a href="#the-assembly-process">The assembly process</a>
   - <a href="#pcb-assembly">PCB Assembly</a>
   - <a href="#3d-print--assembly">3d Print & Assembly</a>
-  - <a href="#wiring-it-all-up">Wiring it all up</a>
 - <a href="#code-explanation">Code Explanation</a>
   - <a href="#raspberry-pi-pico-2---pi-5-communications-bridge">Raspberry Pi Pico 2 <-> Pi 5 Communications bridge</a>
   - <a href="#open-challenge">Open Challenge</a>
@@ -217,7 +217,7 @@ For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accu
   &nbsp;
 </p>
 
-# Bill Of Materials
+## Bill Of Materials
 - <a href="https://www.waveshare.com/rp2350-zero.htm">Raspberry Pi Pico 2 Zero (WaveShare)<a/>
 - <a href="https://sync.ba/product/raspberry-pi-5/">Raspberry Pi 5 8GB</a>
 - <a href="https://share.temu.com/9bHhRICRygB">Time-of-Flight VL53L0x (Temu)<a/>
@@ -231,13 +231,13 @@ For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accu
 ## The assembly process
 
 ### PCB assembly
-WIP...
+We have assembled our PCB by hand with a BGA station. All components were placed by hand. 
 
 ### 3d Print & Assembly
-WIP...
+Most of the robot parts are plastic and 3D printed. We used an Ender 3 V3 KE to print all of our parts. All of the 3D designs are available in the 3D Designs folder.
 
-### Wiring it all up
-WIP...
+The robot is held together by M3 Nylon screws and standoffs. We used these instead of brass screws/standoffs because of the weight advantage they provide. 
+
 
 ## Code Explanation
 
