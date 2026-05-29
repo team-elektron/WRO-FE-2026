@@ -28,6 +28,7 @@
   - <a href="#3d-print--assembly">3d Print & Assembly</a>
   - <a href="#wiring-it-all-up">Wiring it all up</a>
 - <a href="#code-explanation">Code Explanation</a>
+  - <a href="">Raspberry Pi Pico 2 <-> Pi 5 Communications bridge</a>
   - <a href="#open-challenge">Open Challenge</a>
   - <a href="#obstacle-challenge">Obstacle Challenge</a>
 <!-- - <a href=""></a>-->
@@ -228,6 +229,15 @@ WIP...
 WIP...
 
 ## Code Explanation
+
+### Raspberry Pi Pico 2 <-> Pi 5 Communications bridge
+Our robot is split into 2 control units, the Pi Pico 2 which handles the sensors and motors and communicates with the Pi 5. The Pi 5 handles the code for the open and obstacle challenge.
+These 2 components communicate via UART.
+
+<p float="left">
+  <img src="Robot Photos/Pics/bridge-comms-flowchart.svg" width="500"/>
+  &nbsp;
+</p>
 
 ### Open Challenge
 For the open challenge we use a simple script that lives on the Pi Pico 2 Zero.
