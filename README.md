@@ -246,7 +246,7 @@ Our robot is split into 2 control units, the Pi Pico 2 which handles the sensors
 These 2 components communicate via UART.
 
 <p float="left">
-  <img src="Robot Photos/Pics/bridge-comms-flowchart.svg" width="500"/>
+  <img src="Robot Photos/Pics/bridge_comms_flowchart.svg" width="500"/>
   &nbsp;
 </p>
 
