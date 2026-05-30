@@ -263,6 +263,7 @@ The steering mechanism is built from 3 different pieces:
   1. Bottom (Base) + Servo holder
   2. Steering Axle
   3. Top Cover + ToF Sensor Holder
+
 They are connected together with Nylon screws (bottom and top part, the steering axle is connected to the servo). All 3 parts are printed with PETG filament with 3 wall loops, 30% honeycomb infill.
 This design has had many changes until we settled on the most reliable design although it's center is not very precise. That's another thing we will improve next time.
 
