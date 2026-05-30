@@ -235,8 +235,38 @@ We have assembled our PCB by hand with a BGA station. All components were placed
 
 ### 3d Print & Assembly
 Most of the robot parts are plastic and 3D printed. We used an Ender 3 V3 KE to print all of our parts. All of the 3D designs are available in the 3D Designs folder.
-
 The robot is held together by M3 Nylon screws and standoffs. We used these instead of brass screws/standoffs because of the weight advantage they provide. 
+
+<p float="left">
+  <img src="Robot Photos/Pics/chassis-batt.png" width="400"/>
+  &nbsp;
+</p>
+
+The main chassis was printed with Copymaster3D PETG filament like all other components with the most notable settings being the use of 3 wall loops for extra strength. This is also the heaviest 3D printed part of our robot and the most important one structurally. Previous printing tests with 2 wall loops have shown that the model is prone to flexing under load which is not ideal so after adding another "rail" in our design and printing it with 3 wall loops, 4 bottom shell layers, 4 top shell layers and 50% honeycomb infill, we got a very nice and solid robot chassis.
+
+<p float="left">
+  <img src="Robot Photos/Pics/drive-mech.png" width="400"/>
+  &nbsp;
+  <img src="Robot Photos/Pics/drive-mech-2.png" width="400"/>
+</p>
+
+The main driving body holds in the 2 N30 motors. It's made from 2 separate pieces which screw down together, this same driving base has the camera tower mount screwed down onto it. It's printed with the same filament as the chassis and 3 wall loops and 30% honeycomb infill.
+Right next to the main driving case is the gear holder as can be seen in the photos above. It makes sure all gears remain in one spot and don't move anywhere.
+We have decided to keep the main wheel mounts integrated into the chassis but after having to take apart the robot case to dissasemble the driving mechanism multiple times, we have decided that it's best to make these detachable next time. 
+
+<p float="left">
+  <img src="Robot Photos/Pics/steer-mech.png" width="400"/>
+  &nbsp;
+</p>
+
+The steering mechanism is built from 3 different pieces:
+  1. Bottom (Base) + Servo holder
+  2. Steering Axle
+  3. Top Cover + ToF Sensor Holder
+They are connected together with Nylon screws (bottom and top part, the steering axle is connected to the servo). All 3 parts are printed with PETG filament with 3 wall loops, 30% honeycomb infill.
+This design has had many changes until we settled on the most reliable design although it's center is not very precise. That's another thing we will improve next time.
+
+
 
 
 ## Code Explanation
