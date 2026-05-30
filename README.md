@@ -1,5 +1,27 @@
 # Elektron Team - WRO Future Engineers 2026 - Bosnia and Herzegovina
 
+## Introduction
+
+We are Team Elektron from the High School of Electrical Engineering in Sarajevo, Bosnia & Herzegovina.
+This is the public repo for our team and the work we have done on our robot.
+
+
+### Robot Gallery
+
+<p float="left">
+  <img src="Robot Photos/right.jpg" width="350"/>
+  &nbsp;
+  <img src="Robot Photos/Pics/servo-and-tof.jpg" width="350"/>
+</p>
+
+
+### Team Photo
+
+<p float="left">
+  <img src="Team Photos/normal.jpg" width="350"/>
+  &nbsp;
+</p>
+
 ## Folder Content
 * `Team Photos` contains 2 photos of the team (an official one and one funny photo with all team members)
 * `Robot Photos` contains 6 photos of the vehicle (from every side, from top and bottom)
@@ -31,28 +53,8 @@
   - <a href="#raspberry-pi-pico-2---pi-5-communications-bridge">Raspberry Pi Pico 2 <-> Pi 5 Communications bridge</a>
   - <a href="#open-challenge">Open Challenge</a>
   - <a href="#obstacle-challenge">Obstacle Challenge</a>
-<!-- - <a href=""></a>-->
 
 
-## Introduction
-
-We are Team Elektron from the High School of Electrical Engineering in Sarajevo, Bosnia & Herzegovina.
-This is the public repo for our team and the work we have done on our robot.
-
-### Team Photo
-
-<p float="left">
-  <img src="Team Photos/normal.jpg" width="350"/>
-  &nbsp;
-</p>
-
-### Robot Gallery
-
-<p float="left">
-  <img src="Robot Photos/right.jpg" width="350"/>
-  &nbsp;
-  <img src="Robot Photos/Pics/servo-and-tof.jpg" width="350"/>
-</p>
 
 ## Technical & Mechanical Specifications
 
