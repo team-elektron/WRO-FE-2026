@@ -251,6 +251,8 @@ For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accu
   &nbsp;
 </p>
 
+<a href="https://cloud.sphereconsoles.com/index.php/s/2eqJmXQ9cgKXqKD">Video of the assembly process</a>
+
 We have designed a 4 layer PCB with a thickness of 1.6mm. The bottom layer carries the major power rails to their components along with providing a good ground plane. Middle layers carry all of the I2C, UART and other signal traces, and the top layer also acts like a ground plane for the most part. It has major power traces too and some but very few signal traces. The two copper GND planes are connected between the top and bottom layer by many vias throughout the whole PCB.
 
 It is fully assembled by hand with our custom BGA station. All components were placed by hand. We used a solder paste with the Sn64Pb37 leaded formulation because of it's low melting point (~183c) and because it is easier to work with than lead-free solder paste. The trickiest part was soldering in the main 5V power regulator because of its VQFN-14 package, once it flowed into place, we had to rework it with a soldering iron to get rid of the aditional paste that oozed out to the sides + a nudge test with added AMTECH 559-V2-TF flux to ensure all of the solder joints flowed correctly. The PCB worked on the first try. 
