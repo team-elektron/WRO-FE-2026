@@ -220,7 +220,7 @@ For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accu
 ## Bill Of Materials
 - <a href="https://www.waveshare.com/rp2350-zero.htm">Raspberry Pi Pico 2 Zero (WaveShare)<a/>
 - <a href="https://sync.ba/product/raspberry-pi-5/">Raspberry Pi 5 8GB</a>
-- <a href="https://share.temu.com/9bHhRICRygB">Time-of-Flight VL53L0x (Temu)<a/>
+- <a href="https://share.temu.com/9bHhRICRygB">Time-of-Flight VL53L0x (Temu)</a>
 - <a href="https://share.temu.com/IlQc3Dd6nUB">IMU6050 (Temu)</a>
 - <a href="https://www.waveshare.com/mg90s-servo.htm">MG90S Metal 9g Servo (WaveShare)</a>
 - <a href="https://www.aliexpress.com/item/1005009751662765.html">N30 1:150 w Hall sensor motor (AliExpress)</a>
@@ -228,10 +228,15 @@ For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accu
 - <a href="https://share.temu.com/1M8ztQmiIdB">IP2326 2S Charger module (Temu)</a>
 - <a href="https://github.com/team-elektron/WRO-FE-2026/blob/main/Schematics/BOM_WRO-FE-2026.csv">PCB Components BOM (LCSC)</a>
 
-## The assembly process
+
+
+## The assembly process and future improvements
 
 ### PCB assembly
-We have assembled our PCB by hand with a BGA station. All components were placed by hand. 
+We have designed a 4 layer PCB with a thickness of 1.6mm. The bottom layer carries the major power rails to their components along with providing a good ground plane. Middle layers carry all of the I2C, UART and other signal traces, and the top layer also acts like a ground plane for the most part. It has major power traces too and some but very few signal traces. The two copper GND planes are connected between the top and bottom layer by many vias throughout the whole PCB.
+
+It is fully assembled by hand with our custom BGA station. All components were placed by hand. We used a solder paste with the Sn64Pb37 leaded formulation because of it's low melting point (~183c) and because it is easier to work with than lead-free solder paste. The trickiest part was soldering in the main 5V power regulator because of its VQFN-14 package, once it flowed into place, we had to rework it with a soldering iron to get rid of the aditional paste that oozed out to the sides + a nudge test with added AMTECH 559-V2-TF flux to ensure all of the solder joints flowed correctly. The PCB worked on the first try. 
+
 
 ### 3d Print & Assembly
 Most of the robot parts are plastic and 3D printed. We used an Ender 3 V3 KE to print all of our parts. All of the 3D designs are available in the 3D Designs folder.
@@ -265,7 +270,7 @@ The steering mechanism is built from 3 different pieces:
   3. Top Cover + ToF Sensor Holder
 
 They are connected together with Nylon screws (bottom and top part, the steering axle is connected to the servo). All 3 parts are printed with PETG filament with 3 wall loops, 30% honeycomb infill.
-This design has had many changes until we settled on the most reliable design although it's center is not very precise. That's another thing we will improve next time.
+This design has had many changes until we settled on the most reliable design although it's center is not very precise. That's another thing we will improve next time. For now, we are compensating for the losses via software.
 
 
 
