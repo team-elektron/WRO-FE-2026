@@ -7,11 +7,11 @@
 * `Schematics` contains schematic diagrams of the driving base.
 * `Code` contains code of control software for all components which were programmed to participate in the competition.
 * `3D Models` is for the files for models used by 3D printers to produce the vehicle elements.
-* `Misc` is for other files which can be used to understand how to prepare the vehicle for the competition.
 
 ## Navigation
 
 - <a href="#introduction">Introduction</a>
+- <a href="#team-photo">Team Photo</a>
 - <a href="#robot-gallery">Robot Gallery</a>
 - <a href="#technical--mechanical-specifications">Technical & Mechanical Specifications</a>
   - <a href="#mechanics--drive">Mechanics & Drive</a>
@@ -24,7 +24,7 @@
   - <a href="#the-brain">The brain (SBC, MCU)</a>
   - <a href="#sensors">Sensors</a>
 - <a href="#bill-of-materials">Bill of Materials</a>
-- <a href="#the-assembly-process">The assembly process</a>
+- <a href="#the-assembly-process-and-future-improvements">The assembly process and future improvements</a>
   - <a href="#pcb-assembly">PCB Assembly</a>
   - <a href="#3d-print--assembly">3d Print & Assembly</a>
 - <a href="#code-explanation">Code Explanation</a>
