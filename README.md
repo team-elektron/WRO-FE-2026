@@ -243,9 +243,9 @@ For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accu
 ### PCB assembly
 
 <p float="left">
-  <img src="Robot Photos/Pics/pcb1.jpg" width="430"/>
+  <img src="Robot Photos/Pics/pcb1.jpg" width="330"/>
   &nbsp;
-  <img src="Robot Photos/Pics/pcb2.png" width="400"/>
+  <img src="Robot Photos/Pics/pcb2.png" width="300"/>
   &nbsp;
 </p>
 
