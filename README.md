@@ -36,7 +36,15 @@
 
 ## Introduction
 
+We are Team Elektron from the High School of Electrical Engineering in Sarajevo, Bosnia & Herzegovina.
 This is the public repo for our team and the work we have done on our robot.
+
+### Team Photo
+
+<p float="left">
+  <img src="Team Photos/normal.jpg" width="350"/>
+  &nbsp;
+</p>
 
 ### Robot Gallery
 
@@ -218,7 +226,7 @@ For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accu
 </p>
 
 ## Bill Of Materials
-- <a href="https://www.waveshare.com/rp2350-zero.htm">Raspberry Pi Pico 2 Zero (WaveShare)<a/>
+- <a href="https://www.waveshare.com/rp2350-zero.htm">Raspberry Pi Pico 2 Zero (WaveShare)</a>
 - <a href="https://sync.ba/product/raspberry-pi-5/">Raspberry Pi 5 8GB</a>
 - <a href="https://share.temu.com/9bHhRICRygB">Time-of-Flight VL53L0x (Temu)</a>
 - <a href="https://share.temu.com/IlQc3Dd6nUB">IMU6050 (Temu)</a>
@@ -235,7 +243,9 @@ For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accu
 ### PCB assembly
 
 <p float="left">
-  <img src="Robot Photos/Pics/pcb1.jpg" width="400"/>
+  <img src="Robot Photos/Pics/pcb1.jpg" width="430"/>
+  &nbsp;
+  <img src="Robot Photos/Pics/pcb2.png" width="400"/>
   &nbsp;
 </p>
 
