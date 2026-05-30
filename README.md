@@ -233,6 +233,12 @@ For getting the turn angle we use the MPU6050 IMU sensor. It's not the most accu
 ## The assembly process and future improvements
 
 ### PCB assembly
+
+<p float="left">
+  <img src="Robot Photos/Pics/pcb1.jpg" width="400"/>
+  &nbsp;
+</p>
+
 We have designed a 4 layer PCB with a thickness of 1.6mm. The bottom layer carries the major power rails to their components along with providing a good ground plane. Middle layers carry all of the I2C, UART and other signal traces, and the top layer also acts like a ground plane for the most part. It has major power traces too and some but very few signal traces. The two copper GND planes are connected between the top and bottom layer by many vias throughout the whole PCB.
 
 It is fully assembled by hand with our custom BGA station. All components were placed by hand. We used a solder paste with the Sn64Pb37 leaded formulation because of it's low melting point (~183c) and because it is easier to work with than lead-free solder paste. The trickiest part was soldering in the main 5V power regulator because of its VQFN-14 package, once it flowed into place, we had to rework it with a soldering iron to get rid of the aditional paste that oozed out to the sides + a nudge test with added AMTECH 559-V2-TF flux to ensure all of the solder joints flowed correctly. The PCB worked on the first try. 
@@ -250,7 +256,7 @@ The robot is held together by M3 Nylon screws and standoffs. We used these inste
 The main chassis was printed with Copymaster3D PETG filament like all other components with the most notable settings being the use of 3 wall loops for extra strength. This is also the heaviest 3D printed part of our robot and the most important one structurally. Previous printing tests with 2 wall loops have shown that the model is prone to flexing under load which is not ideal so after adding another "rail" in our design and printing it with 3 wall loops, 4 bottom shell layers, 4 top shell layers and 50% honeycomb infill, we got a very nice and solid robot chassis.
 
 <p float="left">
-  <img src="Robot Photos/Pics/drive-mech.png" width="400"/>
+  <img src="Robot Photos/Pics/drive-mech.png" width="465"/>
   &nbsp;
   <img src="Robot Photos/Pics/drive-mech-2.png" width="400"/>
 </p>
